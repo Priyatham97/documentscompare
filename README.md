@@ -1,1 +1,2 @@
-# resumecompare
+# Comparing two Resumes for similiarities
+
