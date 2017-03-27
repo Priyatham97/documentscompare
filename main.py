@@ -10,16 +10,16 @@ stopwords.sort()
 corpus = {}
 tf_dict = {}
 idf_dict = {}
-tokenizer = RegexpTokenizer(r'[a-zA-Z]+')
+tokenizer = RegexpTokenizer(r'[a-zA-Z0-9]+')
 stemmer = PorterStemmer()
 
-print('Reading files into a dictionary \n')
+#Reading files into a dictionary 
 for filename in os.listdir(corpus_root):
     file = open(os.path.join(corpus_root, filename), 'r',encoding="utf8")
     filetext = file.read()
     corpus[filename] = str(filetext)
 
-print('Tokenizing, Stemming and TF \n')
+#Tokenizing, Stemming and TF
 for filename in corpus:
     filetext = corpus[filename]
     
@@ -30,11 +30,11 @@ for filename in corpus:
 
     tf_dict[filename] = {}    
     tf_dict[filename] = Counter(terms)
- #   print(tf_dict[filename])
+    #print(tf_dict[filename])
     
 temp = tf_dict
 a = ' '
-print('Finding IDF of each word \n')
+#Finding IDF of each word
 for filename in tf_dict:
     for word in tf_dict[filename]:
         count = 0
@@ -45,10 +45,10 @@ for filename in tf_dict:
 
         except KeyError:
             a = a + word
-       # print(word)
-       # print(count)  
+        # print(word)
+        # print(count)  
         idf_dict[word] = 1+math.log10(len(tf_dict) / float(count))
-       # print(idf_dict[word])
+        # print(idf_dict[word])
 
 def gettfidfvec(filename):
     tf_wt = {}
