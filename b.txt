@@ -1,0 +1,37 @@
+Calvin Rodo
+613 852 1100
+calvinv@gmail.com 
+210 Goulburn Ave. 
+Ottawa, On
+K1N 8E4
+
+
+Experience
+2006 to Present Human Resources and Skills Development Canada (HRSDC)
+	2010 to Present - Analyst/Developer with Record of Employement Intake Team
+	Projects:
+		Record of Employment Web
+			Summary: An Web Application used for collecting Record Of Employment information from Canadian Businesses.
+			Responsibilities: Developer.
+				-Rewriting legacy system to remove redundancy
+				-Introduced and Implemented Automated Unit Tests to help in refactoring
+				-Implement Server side scripting using jquery and JSON Webservices
+				-Made website accesible according to WCAG2.0 AA guidelines
+		Activity Response Trigger
+			Summary: A rules engine for validation of complex government forms that require different validation schemes based on the application they were input from. 
+			Responsibilities: Lead Developer, Project Lead.
+				-Designed and implmented application in C#
+				-created a plugin system for validation rules
+				-select appropriate validation rules based on form and class metadata
+				-Developed tools for supporting the creation of automated unit tests
+		Workflow Automation:
+			Summary: Development of tools for automating workflow
+			Responsiblities: Lead Dev
+	2006 to 2010 - Developer with In-Person Services
+	Projects:
+		Citizen Access Workstation
+			Summary: A kiosk for accessing e-government services.
+			Responsibilities: Developer
+				-Implementing new features
+				-Securing kiosk
+				-
