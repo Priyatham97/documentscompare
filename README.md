@@ -15,3 +15,11 @@ IDF(t) = log_e(Total number of documents / Number of documents with term t in it
 
 For more Details - Wiki page https://en.wikipedia.org/wiki/Tf%E2%80%93idf
 
+So Code Approach is as follows - 
+
+The files to be compared are stored in directory named as 'resumes' and are stored as strings in a list.
+#Reading files into a dictionary 
+for filename in os.listdir(corpus_root):
+    file = open(os.path.join(corpus_root, filename), 'r',encoding="utf8")
+    filetext = file.read()
+    corpus[filename] = str(filetext)
