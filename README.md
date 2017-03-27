@@ -6,6 +6,8 @@
 
 #### Idea - The idea used here is to convert the words in each document into corresponding vectors (i.e, tdidf vectors) and the cosine between them gives the degree of similiarity between them.
 
+#### Implemented by Priyatham Katta.
+
 Tf-idf stands for term frequency-inverse document frequency, and the tf-idf weight is a weight often used in information retrieval and text mining. This weight is a statistical measure used to evaluate how important a word is to a document in a collection or corpus. The importance increases proportionally to the number of times a word appears in the document but is offset by the frequency of the word in the corpus. 
 
 TF: Term Frequency, which measures how frequently a term occurs in a document. Since every document is different in length, it is possible that a term would appear much more times in long documents than shorter ones. Thus, the term frequency is often divided by the document length (the total number of terms in the document) as a way of normalization: 
