@@ -49,7 +49,7 @@ for filename in tf_dict:
                 if word in temp[file]:
                     count = count + 1 
         idf_dict[word] = 1+math.log10(len(tf_dict) / float(count))
-        ```
+```
 The idea here is to convert the words in each document into corresponding vectors (i.e, tdidf vectors) and the cosine between them gives the degree of similiarity between them.So two functions for getting tdidf vectors and calculating cosine are defined and implemented as follows-
 ```
 def gettfidfvec(filename):
@@ -85,4 +85,3 @@ def docdocsim(filename1, filename2):
      print(cosine)
 
 ```
-   
