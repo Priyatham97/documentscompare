@@ -1,4 +1,4 @@
-# Comparing two Resumes for similiarities
+# Comparing two Documents for similiarities
 
 #### Environment Used - Python 3.42 , NLTK
 
